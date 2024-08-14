@@ -798,7 +798,7 @@ h1 {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .footer-newsletter input {
+    .footer-newsletter form {
         width: 75%;
     }
 }
