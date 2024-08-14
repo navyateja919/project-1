@@ -784,10 +784,9 @@ h1 {
     }
 
     .footer-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr) !important;
-        justify-content: center !important;
-        align-items: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-section-title {
@@ -796,6 +795,10 @@ h1 {
 
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact-container {
+        flex-direction: column-reverse;
     }
 
     .footer-newsletter form {
