@@ -26,12 +26,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    width: 100vw;
     z-index: 1000;
     transition: background 0.3s ease;
     display: flex;
-    flex: 1;
     background-color: #4884ee;
 }
 
