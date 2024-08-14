@@ -216,8 +216,8 @@ textarea {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: center; */
     gap: 4rem;
 }
 
@@ -301,8 +301,9 @@ textarea {
 }
 
 .team-showcase {
-    flex: 1;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 500px;
 }
 
@@ -322,18 +323,18 @@ textarea {
 
 .team-overlay {
     border-radius: 0 0 20px 20px;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
     padding: 2rem;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
     transition: transform 0.5s ease;
 }
 
 .team-showcase:hover .team-overlay {
-    transform: translateY(0);
+    transform: translateY(-99%);
     background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%);
 }
 
@@ -592,14 +593,16 @@ body {
 
 /* mobile version */
 
-@media (max-width: 480px) {
+@media (min-width: 416px) {
 
     .nav-links {
         display: none;
     }
 
     .footer-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-section-title {
@@ -723,7 +726,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
