@@ -89,42 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Advanced Animations with GSAP
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animate services cards
-    gsap.utils.toArray('.service-card').forEach(card => {
-        gsap.from(card, {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            scrollTrigger: {
-                trigger: card,
-                start: "top bottom-=100",
-                toggleActions: "play none none reverse"
-            }
-        });
-    });
-
-    // Animate contact form
-    // gsap.from('.contact-content', {
-    //     x: -100,
-    //     opacity: 0,
-    //     duration: 1,
-    //     scrollTrigger: {
-    //         trigger: '.contact-section',
-    //         start: "top center",
-    //         toggleActions: "play none none reverse"
-    //     }
-    // });
-
-    gsap.from('.contact-visual', {
-        x: 100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: '.contact-section',
-            start: "top center",
-            toggleActions: "play none none reverse"
-        }
-    });
     const hamburger = document.querySelector('.hamburger-menu');
     const navLinks = document.querySelector('.nav-links');
 

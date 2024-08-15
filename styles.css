@@ -841,6 +841,10 @@ h1 {
         padding-right: 25px;
     }
 
+    .contact-content > h2 {
+        font-size: 3rem;
+    }
+
     .geometric-shape {
         width: 200px;
         height: 200px;
