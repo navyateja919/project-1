@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     const goToTopButton = document.getElementById('goToTop');
+    const conMobButton = document.getElementById('but-mob-container');
+    const windowSize = screen.width;
+    console.log(windowSize);
+
+    window.addEventListener('scroll', function() {
+        if (windowSize < 468 && window.scrollY > 300) {
+            conMobButton.style.display = 'block';
+        } else {
+            conMobButton.style.display = 'none';
+        }
+    });
 
     // Fixed Navbar
     window.addEventListener('scroll', function() {
