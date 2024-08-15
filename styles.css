@@ -31,7 +31,8 @@ body {
     transition: background 0.3s ease;
     display: flex;
     justify-content: space-between;
-    background: white;
+    background-color: var(--bg-color);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header.scrolled {
@@ -95,7 +96,8 @@ nav ul li a:hover::after {
 
 .but-container {
     width: 25%;
-    text-align: center;
+    text-align: right;
+    
   }
   
   .cta {

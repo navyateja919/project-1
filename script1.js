@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 0,
             behavior: 'smooth'
         });
+
+
     });
-    
 
     // Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
