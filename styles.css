@@ -861,6 +861,18 @@ h1 {
     .but-container {
         display: none;
     }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .about-description {
+        text-align: center;
+    }
+
+    .services-container {
+        text-align: center;
+    }
 }
 
 
