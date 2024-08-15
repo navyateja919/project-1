@@ -128,10 +128,11 @@ nav ul li a:hover::after {
   .button-text {
     position: absolute;
     left: 0;
-    font-size: 700;
     opacity: 0;
     transition: opacity .5s;
     width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
    }
   
   .cta:hover .button-text {
