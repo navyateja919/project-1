@@ -389,7 +389,7 @@ h1 {
 }
 
 .services-section {
-    padding: 10rem 5%;
+    padding: 100px 5% 50px 5%;
     position: relative;
     overflow: hidden;
     cursor: default;
@@ -754,7 +754,7 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .testimonials-section {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: var(--bg-color);
     overflow: hidden;
 }
@@ -816,6 +816,10 @@ h1 {
     100% { transform: translateX(-100%); }
 }
 
+.but-mob-container {
+    display: none;
+}
+
 /* mobile version */
 
 @media (max-width: 468px) {
@@ -848,6 +852,11 @@ h1 {
     }
 
     .but-container {
+        display: none;
+    }
+
+    .but-mob-container {
+        display: block;
         position: fixed;
         bottom: 30px;
         left: 30px;
