@@ -109,7 +109,7 @@ nav ul li a:hover::after {
     transition: width 0.7s;
   }
   .cta:hover {
-    width: 180px;
+    width: 150px;
     transition: width 0.7s;
   }
   
@@ -845,6 +845,12 @@ h1 {
 
     .footer-newsletter form {
         width: 75%;
+    }
+
+    .but-container {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
     }
 }
 
