@@ -836,6 +836,19 @@ h1 {
         display: none;
     }
 
+    .contact-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .geometric-shape {
+        width: 200px;
+        height: 200px;
+    }
+    .contact-visual {
+        padding: 35px;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column;
