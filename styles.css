@@ -30,11 +30,12 @@ body {
     z-index: 1000;
     transition: background 0.3s ease;
     display: flex;
-    background-color: #4884ee;
+    justify-content: space-between;
+    background: var(--bg-color);
 }
 
 .header.scrolled {
-    /* background: var(--bg-color); */
+    background: var(--bg-color);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,18 +44,12 @@ body {
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     transition: padding 0.3s ease;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
 }
 
 .logo {
@@ -95,6 +90,52 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
+/* CTA */
+
+.but-container {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .cta {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid red;
+    background-color: red;
+    color: #fff;
+    transition: width 0.7s;
+  }
+  .cta:hover {
+    width: 150px;
+    transition: width 0.7s;
+  }
+  
+  .cta .fa-phone {
+    opacity: 1;
+    transition: opacity 0.5s
+  }
+  
+  .cta:hover .fa-phone {
+    opacity: 0;
+    transition: opacity 0.5s
+  }
+  
+  .button-text {
+    position: absolute;
+    left: 0;
+    font-size: 700;
+    opacity: 0;
+    transition: opacity .5s;
+    width: 100%;
+   }
+  
+  .cta:hover .button-text {
+    opacity: 1;
+    transition: opacity 0.5s
+  }
 
 .container {
     flex: 1;
