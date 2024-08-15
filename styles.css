@@ -102,8 +102,8 @@ nav ul li a:hover::after {
   
   .cta {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     border-radius: 50px;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border: 1px black;
@@ -116,6 +116,7 @@ nav ul li a:hover::after {
   }
   
   .cta .fa-phone {
+    transform: rotate(90deg);
     opacity: 1;
     transition: opacity 0.5s
   }
@@ -584,6 +585,10 @@ h1 {
     padding: 60px;
 }
 
+.contact-content > p {
+    padding-bottom: 1rem;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -796,8 +801,8 @@ h1 {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     background: var(--primary-color);
     color: #fff;
     border: none;
@@ -843,6 +848,10 @@ h1 {
 
     .contact-content > h2 {
         font-size: 40px;
+    }
+
+    .contact-content {
+        padding-top: 30px;
     }
 
     .geometric-shape {
