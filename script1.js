@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const goToTopButton = document.getElementById('goToTop');
     const conMobButton = document.getElementById('but-mob-container');
     const windowSize = screen.width;
-    console.log(windowSize);
 
     window.addEventListener('scroll', function() {
         if (windowSize < 468 && window.scrollY > 300) {
@@ -17,8 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
             header.classList.add('scrolled');
+            mobMenu.classList.add('mob-nav-scrolled');
         } else {
             header.classList.remove('scrolled');
+            mobMenu.classList.add('mob-nav-scrolled');
         }
     });
 
@@ -97,13 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-links li a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
-    });
     const carousel = document.querySelector('.carousel');
     const images = carousel.querySelectorAll('img');
     let currentIndex = 0;
