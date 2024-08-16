@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
 
     const hamburger = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.mob-menu');
 
     hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
+        navLinks.classList.toggle('mob-nav-show');
         hamburger.classList.toggle('active');
     });
 
