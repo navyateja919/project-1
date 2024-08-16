@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     const goToTopButton = document.getElementById('goToTop');
-    const conMobButton = document.getElementById('but-mob-container');
+    const serviceHeader = document.getElementsByClassName('glass-nav');
+    const conMobButton = document.getElementById('but-mob-container')
     const windowSize = screen.width;
 
     window.addEventListener('scroll', function() {
@@ -16,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
             header.classList.add('scrolled');
-            mobMenu.classList.add('mob-nav-scrolled');
         } else {
             header.classList.remove('scrolled');
-            mobMenu.classList.add('mob-nav-scrolled');
         }
     });
 
