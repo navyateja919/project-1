@@ -962,7 +962,7 @@ h1 {
     background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     border-radius: 20px;
     padding: 60px 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.6);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     overflow: hidden;
 }
