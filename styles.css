@@ -969,7 +969,7 @@ h1 {
 
 .service-column:hover {
     transform: translateY(-20px) scale(1.03);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
 }
 
 .service-icon {
