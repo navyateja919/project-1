@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adjust carousel animation duration based on number of items
     const totalItems = testimonialCarousel.children.length;
-    const animationDuration = totalItems * 10; // 10 seconds per item
+    const animationDuration = totalItems * 5; // 10 seconds per item
     testimonialCarousel.style.animationDuration = `${animationDuration}s`;
 
     // Pause animation on hover
