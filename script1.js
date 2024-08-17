@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     const goToTopButton = document.getElementById('goToTop');
-    const serviceHeader = document.getElementsByClassName('glass-nav');
     const conMobButton = document.getElementById('but-mob-container')
     const windowSize = screen.width;
 
@@ -40,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    
+    
     // Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
