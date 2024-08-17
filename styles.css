@@ -994,9 +994,7 @@ h1 {
 .service-column h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #f5f5f5;
 }
 
 .service-column p {
@@ -1126,6 +1124,12 @@ h1 {
 /* mobile version */
 
 @media (max-width: 468px) {
+
+    .left-container {
+        height: 50%;
+    }
+
+
     .container h1 {
         font-size: 2rem;
     }
